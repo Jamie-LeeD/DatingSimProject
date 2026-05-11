@@ -1,0 +1,99 @@
+{
+  "dialogueId": "dlg_prologue_sample_001",
+  "sceneId": "scene_school_gate_morning",
+  "startLineId": "line_0001",
+  "lines": [
+    {
+      "lineId": "line_0001",
+      "characterId": "mc",
+      "characterName": "You",
+      "emotion": "neutral",
+      "backgroundId": "bg_school_gate_day",
+      "musicCue": "bgm_main_menu_fadeout",
+      "text": "First day at Seirin Academy... I should try to make a good first impression.",
+      "nextLineId": "line_0002",
+      "choices": []
+    },
+    {
+      "lineId": "line_0002",
+      "characterId": "aiko",
+      "characterName": "Aiko",
+      "emotion": "happy",
+      "backgroundId": "bg_school_gate_day",
+      "musicCue": "bgm_morning_theme",
+      "text": "Hey! You're the transfer student, right? Want me to show you the way to class?",
+      "nextLineId": "",
+      "choices": [
+        {
+          "choiceId": "choice_0002_a",
+          "choiceText": "Sure, thanks. I'd really appreciate it.",
+          "nextLineId": "line_0003",
+          "affectionTargetId": "aiko",
+          "affectionDelta": 2
+        },
+        {
+          "choiceId": "choice_0002_b",
+          "choiceText": "No thanks, I'll figure it out myself.",
+          "nextLineId": "line_0004",
+          "affectionTargetId": "aiko",
+          "affectionDelta": -1
+        }
+      ]
+    },
+    {
+      "lineId": "line_0003",
+      "characterId": "aiko",
+      "characterName": "Aiko",
+      "emotion": "excited",
+      "backgroundId": "bg_hallway_day",
+      "musicCue": "bgm_friendly_walk",
+      "text": "Great! Follow me. Homeroom starts soon, so we'll have to hurry.",
+      "nextLineId": "line_0005",
+      "choices": []
+    },
+    {
+      "lineId": "line_0004",
+      "characterId": "aiko",
+      "characterName": "Aiko",
+      "emotion": "sad",
+      "backgroundId": "bg_school_gate_day",
+      "musicCue": "bgm_tension_light",
+      "text": "Oh... okay. Well, good luck then.",
+      "nextLineId": "line_0006",
+      "choices": []
+    },
+    {
+      "lineId": "line_0005",
+      "characterId": "narrator",
+      "characterName": "",
+      "emotion": "neutral",
+      "backgroundId": "bg_classroom_day",
+      "musicCue": "bgm_classroom_calm",
+      "text": "You arrive in class with Aiko. Maybe this year will turn out better than expected.",
+      "nextLineId": "line_0007",
+      "choices": []
+    },
+    {
+      "lineId": "line_0006",
+      "characterId": "narrator",
+      "characterName": "",
+      "emotion": "neutral",
+      "backgroundId": "bg_classroom_day",
+      "musicCue": "bgm_classroom_calm",
+      "text": "You enter class alone, wondering whether you made the right choice.",
+      "nextLineId": "line_0007",
+      "choices": []
+    },
+    {
+      "lineId": "line_0007",
+      "characterId": "teacher",
+      "characterName": "Ms. Hoshino",
+      "emotion": "neutral",
+      "backgroundId": "bg_classroom_day",
+      "musicCue": "",
+      "text": "Everyone, settle down. Let's welcome our new classmate.",
+      "nextLineId": "",
+      "choices": []
+    }
+  ]
+}
