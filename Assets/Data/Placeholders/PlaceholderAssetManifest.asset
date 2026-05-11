@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c3ceb973272ee84e8953fc11b7b4b30, type: 3}
+  m_Name: PlaceholderAssetManifest
+  m_EditorClassIdentifier: Assembly-CSharp::DatingSim.Core.PlaceholderAssetManifest
+  backgrounds:
+  - id: bg_school_gate_day
+    sprite: {fileID: 21300000, guid: f0819ea186a88e14d84e994090c68db3, type: 3}
+  - id: bg_hallway_day
+    sprite: {fileID: 21300000, guid: cd1346e7d29abc7449126ad4321841d6, type: 3}
+  - id: bg_classroom_day
+    sprite: {fileID: 21300000, guid: 7f5d7317dc65c9c4dac39f6bdceb733f, type: 3}
+  portraits:
+  - id: aiko_neutral
+    sprite: {fileID: 21300000, guid: 23a1f8f3174b7924f8b00a4551de8f79, type: 3}
+  - id: aiko_happy
+    sprite: {fileID: 21300000, guid: 2a51a33483464914a8ffdbb2df4bc205, type: 3}
+  - id: aiko_sad
+    sprite: {fileID: 21300000, guid: b2d76f05c4bae3b4bae0048de3132e7d, type: 3}
+  - id: mc_neutral
+    sprite: {fileID: 21300000, guid: 2c0d59f87e84d2849b00e538d852110d, type: 3}
+  - id: teacher_neutral
+    sprite: {fileID: 21300000, guid: 5b9541b16415c09448c5fabaffad2ece, type: 3}
+  uiSprites:
+  - id: ui_dialogue_panel
+    sprite: {fileID: 21300000, guid: c298c2920888ce744875c6be33b0cda8, type: 3}
+  - id: ui_choice_button
+    sprite: {fileID: 21300000, guid: 5a16b10b568a40e48831740d21ecd728, type: 3}
+  - id: ui_fade_panel
+    sprite: {fileID: 21300000, guid: 2e434bea78e125547a2a1509ad4f3de9, type: 3}
+  audioClips:
+  - id: bgm_menu_loop
+    clip: {fileID: 8300000, guid: c00364c7362ff3441a5a9041fe8ac74f, type: 3}
+  - id: sfx_button_click
+    clip: {fileID: 8300000, guid: 3c46885e6f2ef684db27c5f111577658, type: 3}
+  - id: sfx_dialogue_advance
+    clip: {fileID: 8300000, guid: a69471fddc2012045adf24ca0ed08893, type: 3}

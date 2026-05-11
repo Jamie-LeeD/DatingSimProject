@@ -2,6 +2,7 @@ using DatingSim.Characters;
 using DatingSim.Core;
 using DatingSim.Dialogue;
 using DatingSim.SaveSystem;
+using DatingSim.UI;
 using TMPro;
 using UnityEditor;
 using UnityEditor.SceneManagement;

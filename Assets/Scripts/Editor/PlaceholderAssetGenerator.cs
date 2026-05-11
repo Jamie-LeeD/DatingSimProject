@@ -134,7 +134,7 @@ namespace DatingSim.EditorTools
                 settings.quality = 1f;
                 audioImporter.defaultSampleSettings = settings;
                 audioImporter.forceToMono = true;
-                audioImporter.preloadAudioData = true;
+                audioImporter.loadInBackground = false;
                 audioImporter.SaveAndReimport();
             }
 

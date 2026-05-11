@@ -1,6 +1,7 @@
 using DatingSim.Core;
 using DatingSim.Dialogue;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace DatingSim.UI
 {
@@ -25,10 +26,12 @@ namespace DatingSim.UI
                 return;
             }
 
+            Keyboard keyboard = Keyboard.current;
+            Mouse mouse = Mouse.current;
+
             bool advanceRequested =
-                Input.GetKeyDown(primaryAdvanceKey) ||
-                Input.GetKeyDown(secondaryAdvanceKey) ||
-                (allowMouseClickAdvance && Input.GetMouseButtonDown(0));
+                (keyboard != null && (IsKeyPressedThisFrame(keyboard, primaryAdvanceKey) || IsKeyPressedThisFrame(keyboard, secondaryAdvanceKey))) ||
+                (allowMouseClickAdvance && mouse != null && mouse.leftButton.wasPressedThisFrame);
 
             if (!advanceRequested)
             {
@@ -41,6 +44,25 @@ namespace DatingSim.UI
             {
                 audioManager.PlaySfx(dialogueAdvanceSfx);
             }
+        }
+
+        private static bool IsKeyPressedThisFrame(Keyboard keyboard, KeyCode keyCode)
+        {
+            Key key = Key.None;
+            switch (keyCode)
+            {
+                case KeyCode.Space:
+                    key = Key.Space;
+                    break;
+                case KeyCode.Return:
+                    key = Key.Enter;
+                    break;
+                case KeyCode.KeypadEnter:
+                    key = Key.NumpadEnter;
+                    break;
+            }
+
+            return key != Key.None && keyboard[key].wasPressedThisFrame;
         }
     }
 }
